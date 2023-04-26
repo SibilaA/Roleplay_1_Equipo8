@@ -15,6 +15,14 @@ namespace Program
             mago1.AñadirItem(item1);
             mago1.AñadirItem(item2);
 
+            Item itemCasco = new Item ("Casco", 0, 20, "Defensa");
+            Item itemEspada = new Item ("Espada", 60, 0, "Arma");
+
+            Enano enano1 = new Enano("John", 100);
+
+            enano1.AñadirItem(itemCasco);
+            enano1.AñadirItem(itemEspada);
+
 
 
         }
