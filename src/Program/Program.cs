@@ -30,6 +30,13 @@ namespace Program
             elfo1.AñadirItem(item_espada);
             elfo1.AñadirItem(item_escudo);
 
+            Item ArcoLargo = new Item ("Arco Largo", 75, 0, "Arma" );
+            Item ArmaduraLijera = new Item ("Armadura Lijera", 0, 50, "Defensa" );
+            Elfo Legolas = new Elfo ("Legolas", 100);
+
+            Legolas.AñadirItem(ArcoLargo);
+            Legolas.AñadirItem(ArmaduraLijera);
+
 
 
 
