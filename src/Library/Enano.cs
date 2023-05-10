@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace Program
 {
-    public class Enano
+    public class Enano : IPersonaje
     {    
         private string nombre;
         private int vida;
@@ -59,21 +59,7 @@ namespace Program
             this.items = new Dictionary<string, Item>();
         }
 
-        public void AtacarMago (Mago enemigo)
-        {       
-            if (enemigo.CalculoDefensa() < CalculoAtaque())
-            {
-                enemigo.Vida -= CalculoAtaque() - enemigo.CalculoDefensa();
-            }
-        }
-         public void AtacarElfo (Elfo enemigo)
-        {       
-            if (enemigo.CalculoDefensa() < CalculoAtaque())
-            {
-                enemigo.Vida -= CalculoAtaque() - enemigo.CalculoDefensa();
-            }
-        }
-         public void AtacarEnano (Enano enemigo)
+        public void Atacar (IPersonaje enemigo)
         {       
             if (enemigo.CalculoDefensa() < CalculoAtaque())
             {
